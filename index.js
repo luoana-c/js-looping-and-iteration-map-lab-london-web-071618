@@ -4,7 +4,10 @@ function lowerCaseDrivers(drivers) {
 }
 
 function nameToAttributes(drivers) {
-  
-  drivers.forEach
-  // return drivers.map(driver => driver[firstName] = driver.substr(0,str.indexOf(' ')))
+  drivers.map(function(driver) {
+    const first = driver.substr(0,str.indexOf(' '))
+    const last = driver.substr(str.indexOf(' ') + 1)
+    
+    return {firstName: first, lastName: last}  
+  }
 }
