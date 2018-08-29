@@ -13,3 +13,9 @@ function nameToAttributes(drivers) {
   return arr
 }
 
+function attributesToPhrase(drivers){
+  arr = drivers.map(function (driver) {
+    return [``]
+  })
+  return arr
+}
